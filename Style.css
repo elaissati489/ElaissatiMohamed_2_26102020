@@ -1,65 +1,102 @@
-/* ci dessous le code css de la partie entête du site web (le header)*/
+body{ 
+    margin: 0px;
+}
+
+/*Le header du site web */
 header{ 
 
-   /* border: 2px solid red; */
-    height: 100px;
-}
-.wrapper{ 
-    padding: 0 10px;
-    margin: 0px auto;
-}
-.img-logo{ 
-    float: left;
-    margin-top: 17px;
-   /* border: 2px solid yellow; */
-}
-ul{ 
-    list-style: none;
-}
-header nav{ 
-    /*border: 2px solid green;*/
-    float: right;
-}
-header nav ul li{ 
-    display: inline-block;
-    margin-right: 20px;
-    font-family: 'Raleway', sans-serif;
-}
-.a-Inscrit{ 
-    text-decoration: none;
-    color:  #0065FC;
-    font-weight: 2000;
-}
-a{ 
-    text-decoration: none;
-    font-weight: bolder;
-    color: black;
-}
-a:hover{ 
-    color:  #0065FC;
-   
-}
-.li-liens{ 
-    /*border: 2px solid red;*/
-    margin-top: 0px;
-    padding-top: 30px;
-    position: relative;
-    bottom: 18px;
-} 
-.li-liens:hover{ 
-    border-top: 1px solid#0065FC;
-}    
+     display: grid;
+     align-items: center;
+     grid-template-areas: "logo nav inscrit";
+     grid-template-columns: auto 1fr auto;
+ }
+ .img-logo{ 
 
-.B-recherche{ 
-   /* border: 2px solid red;*/
-    margin-left: 10px;
-    margin-right: 10px;
-}
+     grid-area: logo;
+     height: 100%;
+     margin-left: 10px;
+ }
+ .nav-1{ 
+    /* border:2px solid blue;*/
+     grid-area: nav;
+     display: flex;
+     justify-content: flex-end;
+     height: 100%;
+ }
+ #sp-a{ 
+     padding:2rem;
+     text-decoration: none;
+     color:black;
+     font-family: 'Raleway', sans-serif;
+     font-weight: bolder;
+ }
+ #sp-h{ 
+     padding:2rem;
+     text-decoration: none;
+     color:black;
+     font-family: 'Raleway', sans-serif;
+     font-weight: bolder;
+ }
+ #sp-a:hover{ 
+     padding:2rem;
+     text-decoration: none;
+     font-family: 'Raleway', sans-serif;
+     font-weight: bolder;
+     color: #0065FC;
+     border-top: 1px solid #0065FC;
+ }
+ #sp-h:hover{ 
+     padding:2rem;
+     text-decoration: none;
+     font-family: 'Raleway', sans-serif;
+     font-weight: bolder;
+     color: #0065FC;
+     border-top: 1px solid #0065FC;
+ }
+ #sp-i{ 
+     grid-area: inscrit;
+     padding: 2rem;
+     text-decoration: none;
+     color: #0065FC;
+     font-family: 'Raleway', sans-serif;
+     font-weight: bolder;
+ }
+ #sp-i:hover{ 
+     grid-area: inscrit;
+     padding: 2rem;
+     text-decoration: none;
+     color: #0065FC;
+     border-top: 1px solid #0065FC;
+     font-family: 'Raleway', sans-serif;
+     font-weight: bolder;
+ }
+
+
+
+
 .trouver-son-voyage{ 
-  /*  border: 2px solid red;*/
-    margin-left: 10px;
-    margin-right: 10px;
+   /*  border: 2px solid red;*/
+    /* margin-left: 10px;
+     margin-right: 15px;*/
+     padding-left: 15px;
+ }
+ .p1{ 
+   font-family: 'Raleway', sans-serif;
+   font-weight: bolder;
 }
+
+.p2{ 
+   font-family: 'Raleway', sans-serif;
+   margin-top: -8px;
+}
+.B-recherche{ 
+   padding-left: 15px;
+   padding-top: 10px;
+   /* border: 2px solid red;*/
+   /* margin-left: 10px;
+    margin-right: 10px;*/
+}
+
 .p1{ 
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
@@ -111,20 +148,35 @@ input[type="text"]{
     font-weight: bolder;
     border: 0px;
 }
+.button-2{ 
+   background-color: #0065FC;
+   margin-left: -5px;
+   height: 43px;
+   width: 120px;
+   border-top-right-radius: 13px;
+   border-bottom-right-radius: 13px;
+   color: white;
+   font-family: 'Raleway', sans-serif;
+   font-weight: bolder;
+   border: 0px;
+   display: none;
+}
 .Filtres{ 
-  /*  border: 2px solid blueviolet;  */
-    height: 150px;
-    margin-left: 10px;
-    margin-right: 10px;
+   /* border: 2px solid blueviolet;  */
+    height: auto;
+    padding-left: 10px;
+ /*   margin-left: 10px;
+    margin-right: 10px;*/
 }
 .media{ 
    /* border: 2px solid green;*/
-    height: 140px;
+    height: auto;
+    padding-top: 25px;
 }
+
 span{ 
-    float: left;
+    /*float: left;*/
    /* border: 2px solid yellow;*/
-    margin-top: 40px;
     margin-right: 20px;
     font-weight: bolder;
     font-family: 'Raleway', sans-serif;
@@ -134,8 +186,8 @@ span{
     display: inline-block;
     height: 50px;
     width: 150px;
-    margin-right: 10px;
-    margin-top: 19px;
+   /* margin-right: 10px;
+    margin-top: 19px;*/
 }
 .p-1:hover{ 
     background-color:  #1253E1;
@@ -170,8 +222,11 @@ span{
  /*border: 2px solid red;*/
  margin-top: 10px;
  height: 100px;
+ display: flex;
+
 }
 #icone-info{ 
+    margin-top: 15px;
     background-color: white;
     border: 1px solid gray;
     font-weight: bolder;
@@ -187,94 +242,71 @@ span{
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
 }
-/* La fin du code css de la partie entête du site web (le header)*/
-/* Le css de la partie body pour les hébergement et activités à Marseille*/    
-  /*Sous-partie hébergement à Marseille*/                                                
-#hébergements{ 
+                                                                    /* La partie hebergement à marseille */
 
-    /*  border: 2px solid red;*/
-      height: 820px;
-  }
-  h2{ 
-      margin-left: 40px;
-      margin-right: 40px;
-      font-family: 'Raleway', sans-serif;
-      font-weight: bolder;
-     /* border: 2px solid green; */
-  }
-  h3{ 
-     /* border: 2px solid red;*/
-      font-family: 'Raleway', sans-serif;
-      font-weight: bolder;
-      margin-left: 40px;
-      margin-right: 40px;
-      margin-top: 20px;
-      font-size: 20px;
-  }
-  #icone-pop{ 
-      color: black;
-      float: right;
-  }
-  .wrapper-1{ 
-      background-color: #F2F2F2;
-      border-radius: 20px;
-    /*  border: 2px solid green;*/
-      height: 95%;
-      margin: 10px 10px;
-      width: 65%;
-      float: left;
-  }
-  .wrapper-2{ 
-      background-color: #F2F2F2;
-   /*   border: 2px solid green;*/
-      border-radius: 20px;
-      height: 95%;
-      margin: 10px 10px;
-      width: 30%;
-      float: right;
-  }
-  
-  .encadré{ 
-    /*  border: 1px solid black; */
-      text-align: center;
-      width: 100%;
-      margin: 0px auto;
-  
-  }
-  .encadré-2{ 
-     /* border: 2px solid black; */
-      height: 700px;
-  }
-  .arti-1,.arti-2,.arti-3,.arti-4,.arti-5,.arti-6{ 
-   /*   border: 2px solid red; */
-      border-radius: 20px;
-      width: 280px;
-      height: 240px;
-      display: inline-block;
-      margin: 10px;
-      background-color: white;
-      box-shadow: 1px 1px 1px 1px #BFC9CA;
-  }
-  .arti-7,.arti-8,.arti-9{ 
-     /* border: 2px solid red; */
-      border-radius: 20px;
-      height: 150px;
-      margin-left: 10px;
-      margin-right: 10px;
-      margin-top: 50px;
-      background-color: white;
-      box-shadow: 1px 1px 1px 1px #BFC9CA;
-  }
-  .div-image-1{ 
-   /*   border: 2px solid yellow;  */
+#hebergement{ 
+ /*  border: 2px solid red;*/
+   height: 820px;
+   padding-left: 10px;
+  /* margin-left: 10px;
+   margin-right: 10px;*/
+   display: flex;
+   justify-content: space-between;
+}
+h2{ 
+   font-family: 'Raleway', sans-serif;
+
+}
+.wrapp-1{ 
+/* border: 2px solid green;*/
+ width: 65%;
+ height: 90%;
+ display: inline-block;
+ border-radius: 20px;
+ background-color: #F4F4F4;
+}
+.h2-wrappe1{ 
+ margin-left: 10px;
+}
+.arti-1,.arti-2,.arti-3,.arti-4,.arti-5,.arti-6{ 
+  /* border: 2px solid red;*/
+   border-radius: 20px;
+   width: 30%;
+   height: 35%;
+   display: inline-block;
+   margin: 10px;
+   margin-left: 12px;
+   margin-top: 30px;
+   box-shadow: 1px 1px 1px 1px #BFC9CA;
+   background-color: white;
+}
+#icone-pop{ 
+   color: black;
+   float: right;
+   margin-right: 30px;
+}
+.arti-7,.arti-8,.arti-9{ 
+/*   border: 2px solid blue;*/
+   border-radius: 20px;
+   height: 20%;
+   width: 90%;
+   margin-left: 19px;
+   margin-right: 10px;
+   margin-top: 50px;
+   background-color: white;
+   box-shadow: 1px 1px 1px 1px #BFC9CA;
+}
+
+.div-image-1{ 
+ /*     border: 2px solid yellow; */
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
       height: 60%;
       margin: 3px; 
   }
   .img-1-h{ 
-     height: 145px;
-     width: 274px;
+     height: 100%;
+     width: 100%;
      float: left;
      border-top-left-radius: 20px;
      border-top-right-radius: 20px;
@@ -305,21 +337,25 @@ span{
       padding: 2px;
   }
   .texte-1,.texte-2,.texte-3,.texte-4,.texte-5,.texte-6{ 
-  /*border: 2px solid green;*/
-     height: 90px;
+     /*border: 2px solid green;*/
+     height: 30%;
+
   }
   .texte-7,.texte-8,.texte-9{ 
-   /*  border: 2px solid purple; */
+    /* border: 2px solid purple; */
      float:right;
      height: 100%;
      border-top-right-radius: 20px;
      border-bottom-right-radius: 20px;
      width: 57%;
+     background-color: white;
+   
   }
   .descri-1,.descri-2,.descri-3,.descri-4,.descri-5,.descri-6{ 
-  /*border: 1px solid red;*/
+ /* border: 1px solid red;*/
   height: 50px;
   padding-left: 8px;
+
   
   }
   
@@ -357,7 +393,7 @@ span{
   
   
   .star-1,.star-2,.star-3,.star-4,.star-5,.star-6{ 
-     /* border: 2px solid blue;*/
+   /*   border: 2px solid blue;*/
       height: 20px;
       clear: both;
       padding-left: 15px;
@@ -394,149 +430,152 @@ span{
 #grey-7{ 
     color:  #c6cfd0;
 }
-/*Fin du css pour la sous-partie hébergement à Marseille*/     
-/*Le code css de la sous-partie Activités à marseille*/
-  #Activités{ 
-    /* border: 2px solid purple;*/
-     height: 600px;
-     margin-left: 10px;
-     margin-right: 10px;
-  }
-  .wrapper-3{ 
-  /*    border: 2px solid black;*/
-      height: 87%;
-  }
-  .encadré-3{ 
-     /* border: 2px solid red;*/
-      height:98%;
-      width: 49%;
-      float: left;
-  }
- .encadré-4{
-   /*  border: 2px solid purple;*/
-     height:98%;
-     width: 49%;
-     float: right;
- }
- .cont-article-1{ 
-  /*   border: 2px solid green;*/
-     height:98%;
-     width: 49%;
-     float: left;
- }
- .cont-article-2{ 
-   /* border: 2px solid green;*/
-    height:98%;
-    width: 49%;
-    float: right;
+
+                                                                    /* La sous partie les plus populaires*/
+
+
+.wrapp-2{ 
+  /* border: 2px solid green;*/
+   border-radius: 20px;
+   width: 30%;
+   height: 90%;
+   display: inline-block;
+   background-color: #F4F4F4;
 }
-.cont-article-3{ 
- /*   border: 2px solid green; */
-    height:98%;
-    width: 49%;
-    float: left;
+
+.arti-7,.arti-8,.arti-9{ 
+  /* border: 2px solid blue;
+   border-radius: 20px;**/
+   height: 20%;
+   width: 90%;
+   margin-left: 19px;
+   margin-right: 10px;
+   margin-top: 50px;
 }
-.cont-article-4{ 
-  /*  border: 2px solid green; */
-    height:98%;
-    width: 49%;
-    float: right;
+.h2-wrappe2{ 
+margin-left: 10px;
+}
+h3{ 
+   margin-left: 10px;
+   font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+
+                                                                      /* La partie activité a marseille*/
+#activités{ 
+    /*  border: 2px solid blue;*/
+      height: 650px;
+      padding-left: 10px;
+     /* margin-left: 10px;
+      margin-right: 15px;*/
+}
+.h2-acti{ 
+   margin-left: 10px;
+}
+.wrapper-3{ 
+/*  border: 2px solid blue;*/
+  display: flex;
+  height: 90%;
+}
+.encadré-3,.encadré-4{ 
+ /*  border: 2px solid purple;*/
+   width: 50%;
+   display: flex;
+   margin: 10px;
+}
+.cont-article-1,.cont-article-2,.cont-article-3,.cont-article-4{ 
+ /*  border: 2px solid orange;*/
+   width: 50%;
+   margin: 10px;
 }
 .arti-10,.arti-13{ 
-  /*  border: 1px solid  #BFC9CA;*/
-  box-shadow: 0px 0px 0px 1px #BFC9CA;
-    border-radius: 20px;
-    margin: 20px;
-    height: 90%;
+ /*  border: 2px solid red;*/
+   border-radius: 20px;
+   width: 20%;
+   margin-left: 20px;
+   height: 90%;
+   width: 90%;
+   box-shadow: 1px 1px 1px 1px #BFC9CA;
 }
-.p-arti-10,.p-arti-13,.p-arti-11,.p-arti-12,.p-arti-14,.p-arti-15{ 
-   /* border: 2px solid green;*/
-    margin-left: 20px;
-    margin-right: 20px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
-}
-
-.div-image-10,.div-image-13{ 
-    /*border: 2px solid red;*/
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    height: 85%;
-}
-
-.image-10,.image-13{ 
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 317px;
-    height: 385px;
-    object-fit: cover;
-    box-shadow: 0px 0px 0px 1px #BFC9CA;
-}
-.image-11,.image-15{ 
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 317px;
-    height: 200px;
-    object-fit: cover;
-}
-.image-12,.image-14{ 
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 317px;
-    height: 130px;
-    object-fit: cover;
-}   
-.arti-11{ 
-
-    border-radius: 20px;
-    margin: 20px;
-    height: 50%;
-    box-shadow: 0px 0px 0px 1px #BFC9CA;
-}
-.arti-12{ 
-  /*  border: 2px solid blue; */
-    border-radius: 20px;
-    margin: 20px;
-    height: 35%;
-    box-shadow: 0px 0px 0px 1px #BFC9CA;
-}
-
-.arti-14{ 
- /*   border: 2px solid blue;*/
-    border-radius: 20px;
-    border-radius: 20px;
-    margin: 20px;
-    height: 35%;
-    box-shadow: 0px 0px 0px 1px #BFC9CA;
+.arti-11,.arti-15{ 
+ /*  border: 2px solid red;*/
+   border-radius: 20px;
+   width: 20%;
+   margin-left: 20px;
+   width: 90%;
+   height: 55%;
+   box-shadow: 1px 1px 1px 1px #BFC9CA;
 }
 .arti-15{ 
-  /*  border: 2px solid blue;*/
-    border-radius: 20px;
-    border-radius: 20px;
-    margin: 20px;
-    height: 50%;
-    box-shadow: 0px 0px 0px 1px #BFC9CA;
+   margin-top: 5%;
 }
- /*La fin du code css de la sous-partie Activités à marseille*/
-/* La fin du css de la partie body pour les hébergement et activités à Marseille*/
-/* Le css de la partie footer*/
-footer{ 
-   /* border: 2px solid black; */
-    height: 200px;
-    background-color: #F2F2F2;
+.arti-12{ 
+  /* border: 2px solid red;*/
+   border-radius: 20px;
+   width: 20%;
+   margin-left: 20px;
+   width: 90%;
+   height: 30%;
+   margin-top: 5%;
+   box-shadow: 1px 1px 1px 1px #BFC9CA;
+}
+.arti-14{ 
+  /* border: 2px solid red;*/
+   border-radius: 20px;
+   width: 20%;
+   margin-left: 20px;
+   width: 90%;
+   height: 30%;
+   box-shadow: 1px 1px 1px 1px #BFC9CA;
+}
+.div-image-10,.div-image-11,.div-image-12,.div-image-13,.div-image-14,.div-image-15{ 
+ /*  border: 2px solid black;*/
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+   height: 85%;
+}
+.div-image-12,.div-image-14{ 
+   height: 70%;
+}
+.image-10,.image-11,.image-12,.image-13,.image-14,.image-15{ 
+   width: 100%;
+   height: 100%;
+   border-top-right-radius:20px ;
+   border-top-left-radius: 20px;
+   object-fit: cover;
+}
+.p-arti-10,.p-arti-11,.p-arti-12,.p-arti-13,.p-arti-14,.p-arti-15{ 
+   margin-left: 20px;
+   font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
 
+                                                                              /* La partie footer */
+
+
+
+footer{
+ /*  border: 2px solid green;*/
+ /*  margin-left: 10px;
+   margin-right: 15px;*/
+   display: flex;
+   background-color: #F4F4F4;
 }
 .d1,.d2,.d3{ 
-   /* border: 2px solid blue;*/
-    float: left;
-    width: 32%;
+  /* border: 2px solid red;*/
+   width: 33%;
+   padding-left: 20px;
 }
-li{ 
-    margin: 20px;
-    font-family: 'Raleway', sans-serif;
-    
+
+footer h2{ 
+   font-family: 'Raleway', sans-serif;
 }
-.h1-ft,.h2-ft,.h3-ft{ 
-    font-size: 25px;
+footer ul li{ 
+   font-family: 'Raleway', sans-serif;
+   list-style: none;
+   line-height: 40px;
+   font-weight: lighter;
 }
-/*fin du code css de la partie footer*/
