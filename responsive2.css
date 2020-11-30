@@ -1,0 +1,165 @@
+@media screen and (max-width: 900px){ 
+    .hebergement{ 
+       /* border: 2px solid red;*/
+        display: grid;
+        height: auto;
+        width: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr 1fr;
+        grid-row-gap: 30px;
+        }
+    .divh{ 
+       /* border:2px solid green;*/
+        border-radius: 20px;
+        width: 100%;
+    }
+    .conth{ 
+      /*  border: 2px solid green;*/
+        height: 80%;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 0.5rem;
+        grid-column-gap: 0.5rem;
+    }
+    .arti-h{ 
+        /*border: 1px solid red;*/
+        border-radius: 20px;
+    }
+    .img-1-h{ 
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+        margin: 0px;
+     }
+    .contp{ 
+        /*border: 2px solid green;*/
+        height:auto;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 1rem;
+    }
+    .divp{ 
+       /* border:2px solid blue;*/
+        border-radius: 20px;
+        grid-row-start: 1;
+        width: 100%;
+    }
+    .arti-p{ 
+   /* border: 1px solid red;*/
+    border-radius: 20px;
+    height: 20vh;
+    width: 100%;
+    background-color: white;
+}
+
+.div-image-7,.div-image-8,.div-image-9{ 
+    /* border: 2px solid purple; */
+     border-top-left-radius: 20px;
+     border-bottom-left-radius: 20px;
+     height: 95%;
+     width: 30%;
+     float: left;
+     padding: 2px;
+ }
+ .img-2-h{ 
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    object-fit: cover;
+}
+ .texte-7,.texte-8,.texte-9{ 
+
+   float:right;
+   height: 100%;
+   border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
+   width: 65%;
+   background-color: white;
+}
+
+/*Le css de la partie activivtés a marseille*/
+
+.Activités{ 
+   /* border: 2px solid purple;*/
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.contA{ 
+    display: grid;
+    height: auto;
+  /*  border: 2px solid orange;*/
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+} 
+.arti-1{ 
+    grid-row:auto;
+}
+.arti-2{ 
+    grid-row:auto;
+}
+.arti-3{ 
+    grid-column-start: auto;
+    grid-row:auto;
+}
+.arti-4{ 
+    grid-row:auto;
+    grid-column-start:auto;
+}
+.arti-5{ 
+    grid-row:auto;
+}
+.arti-6{ 
+    grid-row:auto;
+ grid-column-start:auto;
+ grid-row-start: auto;
+}
+.arti-1,.arti-2,.arti-3,.arti-4,.arti-5,.arti-6{ 
+    /* border: 1px solid red;*/
+     border-radius: 20px;
+     margin: 0px;
+     border: 0.5px solid gray;
+   /*  box-shadow: 5px 5px 5px 5px #F3F3F3;*/
+ }
+.diva-img-1,.diva-img-4{ 
+   /*   border: 1px solid blue;*/
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      height: 130px;
+  }
+  .diva-img-2,.diva-img-6{ 
+  /*border: 1px solid green;*/
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 130px;
+  }
+  .diva-img-3,.diva-img-5{ 
+ /*border: 1px solid orange;*/
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 130px;
+  }
+.img-1,.img-2,.img-3,.img-4,.img-5,.img-6{ 
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+}
+
+/*La fin du css de la partie activivtés a marseille*/
+/*LE FOOTER*/
+
+.d1,.d2,.d3{ 
+
+/* border: 2px solid red;*/
+width: 95%;
+}
+}

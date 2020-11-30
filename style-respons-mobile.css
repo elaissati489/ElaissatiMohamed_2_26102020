@@ -1,0 +1,307 @@
+@media screen and (max-width:530px){ 
+    html,head,body{ 
+        margin: 0px;
+    }
+    body{ 
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0px;
+      /*  border: 3px solid yellow;*/
+    }
+ 
+    /*La partie navigation di site web*/
+    .main{ 
+       /* border: 2px solid aqua;*/
+        width: 100%;
+    }
+    header{ 
+        display: grid;
+        align-items: center;
+        grid-template-areas: "logo nav inscrit";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "logo logo inscrit inscrit"
+        "nav nav nav nav";
+        padding: 10px;
+    }
+    .img-logo{ 
+        grid-area: logo;
+       /* height: 100%;*/
+    }
+    .nav-1{ 
+      /*  border:2px solid blue;*/
+        grid-area: nav;
+        display: flex;
+        justify-content: center;
+        /*height: 100%;*/
+    }
+   #sp-a{ 
+       /* border:2px solid green;*/
+        width: 50%;
+       text-align: center;
+    }
+    #sp-a:hover{ 
+        /* border:2px solid green;*/
+        border-top: 0px;
+         width: 50%;
+        text-align: center;
+        border-bottom: 2px solid #0065FC;
+     }
+    #sp-h{ 
+      /*  border:2px solid green;*/
+        width: 50%;
+       text-align: center;
+    }
+    #sp-h:hover{ 
+        border-top: 0px;
+        width: 50%;
+       text-align: center;
+       border-bottom: 2px solid #0065FC;
+    }
+    #sp-i{ 
+       /* border:2px solid green;*/
+        grid-area: inscrit;
+        /*height: 100%;*/
+       display: flex;
+       justify-content: flex-end;
+    }
+    #sp-i:hover{ 
+        /* border:2px solid green;*/
+        border-top: 0px;
+         grid-area: inscrit;
+         /*height: 100%;*/
+        display: flex;
+        justify-content: flex-end;
+     }
+
+
+    .trouver-son-voyage{ 
+       justify-content: center;
+       padding-right: 10px;
+     /*  border: 2px solid black;*/
+    }
+    .p1{ 
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    .p2{ 
+        font-family: 'Raleway', sans-serif;
+        margin-top: -8px;
+        text-align: center;
+    } 
+    .icone{ 
+        display: inline;
+        float: left;
+        height: 43px;
+        width: 45px;
+        background-color:  #E3E5EE;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        padding: 0px;
+    }
+    form{ 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    input[type="text"]{ 
+        height: 20px;
+        padding: 10px;
+        margin-right: 0px;
+        width: auto;
+        border: 1px solid #E3E5EE;
+    
+     }
+     #lieux{ 
+         width: auto;
+         overflow: hidden;
+     }
+    .B-recherche{ 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .button-1{ 
+        background-color: #0065FC;
+        margin-left: -5px;
+        height: 43px;
+        width: 43px;
+        border-radius: 13px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+        border: 0px;
+        display: none;
+    }
+    .button-2{ 
+        background-color: #0065FC;
+        height: 43px;
+        width: 43px;
+        border-radius: 13px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+        border: 0px;
+        display: inline;
+        float: right;
+        margin-left: 0px;
+    }
+    .fa-search{ 
+        color: white;
+    }
+    .Filtres{ 
+        height: auto;
+        padding-left: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+     }
+    span{ 
+        margin-top: 15px;
+    }
+    .div1{ 
+        /*border: 2px solid red;*/
+        display: inline-block;
+        height: 50px;
+        width: 150px;
+       /* margin-right: 10px;
+        margin-top: 19px;*/
+    }
+
+ /*Le css responsive de la partie hebergement à marseille*/
+ .hebergement{ 
+   /* border: 2px solid red;*/
+    display: grid;
+    height: auto;
+    width: 95%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 2fr;
+    grid-row-gap: 30px;
+    }
+ .conth{ 
+   /* border: 2px solid green;*/
+    height: 80%;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 0.5rem;
+}
+.divh{ 
+     /*border:2px solid green;*/
+    
+ }
+.img-1-h{ 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    margin: 0px;
+ }
+
+/*Le css de la sous populaires*/
+.contp{ 
+    /*border: 2px solid green;*/
+    height:auto;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 1rem;
+}
+.divp{ 
+   /* border:2px solid blue;*/
+    border-radius: 20px;
+    grid-row-start: 1;
+    width: auto;
+    margin: 0px 10px;
+}
+
+
+/*La fin de la partie populaires*/
+/*la fin du css responsive de la partie hebergement à marseille*/
+ 
+/*Le css de lapartie actvivtés a marseille*/
+.Activités{ 
+   /* border: 2px solid purple;*/
+    height: auto;
+    width: 91%;
+    padding-right: 20px;
+}
+.contA{ 
+    display: grid;
+    height: auto;
+   /* border: 2px solid orange;*/
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 10px;
+} 
+.arti-1{ 
+    grid-row:auto;
+}
+.arti-2{ 
+    grid-row:auto;
+}
+.arti-3{ 
+    grid-column-start: auto;
+    grid-row:auto;
+}
+.arti-4{ 
+    grid-row:auto;
+    grid-column-start:auto;
+}
+.arti-5{ 
+    grid-row:auto;
+}
+.arti-6{ 
+    grid-row:auto;
+ grid-column-start:auto;
+ grid-row-start: auto;
+}
+.arti-1,.arti-2,.arti-3,.arti-4,.arti-5,.arti-6{ 
+    /* border: 1px solid red;*/
+     border-radius: 20px;
+     margin: 0px;
+     border: 0.5px solid gray;
+   /*  box-shadow: 5px 5px 5px 5px #F3F3F3;*/
+ }
+.diva-img-1,.diva-img-4{ 
+    /*  border: 1px solid blue;*/
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      height: 130px;
+  }
+  .diva-img-2,.diva-img-6{ 
+ /* border: 1px solid green;*/
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 130px;
+  }
+  .diva-img-3,.diva-img-5{ 
+ /* border: 1px solid orange;*/
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 130px;
+  }
+.img-1,.img-2,.img-3,.img-4,.img-5,.img-6{ 
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+}
+/*La fin du  css de lapartie actvivtés a marseille*/
+/* Le footer */
+footer{ 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 15px;
+}
+.d1,.d2,.d3{ 
+
+/* border: 2px solid red;*/
+width: 95%;
+}
+}
