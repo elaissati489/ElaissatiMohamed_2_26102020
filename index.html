@@ -11,39 +11,58 @@
         <title>Réservia</title>
     </head>
     <body>
-        <div class="main">
         <header>
             <a href="#"><img src="sous-images/Reservia.svg" alt="logo Reservia" class="img-logo"></a>
             <nav class="nav-1">
               <a href="#hebergement" id="sp-h">hébergements</a>
-              <a href="#activités" id="sp-a">Activités</a>
+              <a href="#Activités" id="sp-a">Activités</a>
             </nav> 
             <a href="#" id="sp-i">S'inscrire</a>
           </header>
          <section class="trouver-son-voyage">
           <p class="p1">Trouver votre hébergement pour des vacances de rêve</p>
           <P class="p2">En plein centre ville ou pleine nature</P>
+          <form action="#" class="formul" method=get>
+            <span class="span-loc"><i class="fas fa-map-marker-alt"></i></span>
+            <input type="search" placeholder="Marseille, France">
+            <button class="bt-1">Rechercher</button>
+            <button class="bt-2"><i class="fas fa-search"></i></button>
+          </form>
         </section>
-        <section class="B-recherche">
-            <form action="post">
-              <div class="icone"><img src="sous-images/map-marker-alt-solid.svg" alt="icone-location" class="icone-1"></div>
-                <input type="text" id="lieux" placeholder="Marseille,  France">
-                <input type="submit" value="Rechercher" class="button-1">
-                <button class="button-2"><i class="fas fa-search"></i></button>
-            </form>
+         <section class="Filtres-info">
+               <div class="filtres">
+                 <h2 class="h2-filtres">Filtres</h2>
+                 <a href="#">
+                 <div class="div1-eco">
+                   <div class="icon"><i class="fas fa-money-bill-wave"></i></div>
+                   <span class="span-filtres-E">Économique</span>
+                 </div>
+                 </a>
+                 <a href="#">
+                 <div class="div1-fam">
+                   <div class="icon"><i class="fas fa-child"></i></div>
+                   <span class="span-filtres-F">Familial</span>
+                 </div>
+                 </a>
+                 <a href="#">
+                 <div class="div1-rom">
+                   <div class="icon"><i class="fas fa-heart"></i></div>
+                   <span class="span-filtres-R">Romance</span>
+                 </div>
+                 </a>
+                 <a href="#">
+                 <div class="div1-animaux">
+                   <div class="icon"><i class="fas fa-dog"></i></div>
+                   <span class="span-filtres-A">Animaux autorisés</span>
+               </div> 
+              </a> 
+               </div> 
+                 <div class="div-2">
+                   <div class="div-i-info"><i class="fas fa-info" id="icone-info"></i></div>
+                     <span class="sp-info">Plus de 500 logements sont disponibles dans cette villes</span>
+                    </div>
         </section>
-        <section class="Filtres">
-            <div class="media">
-                <span>Filtres</span>
-                <div class="div1"><i class="fas fa-money-bill-wave-alt"></i><p class="p-1">Economique</p></div>
-                <div class="div1"><i class="fas fa-child"></i><p class="p-1">Familiale</div>
-                <div class="div1"><i class="fas fa-heart"></i><p class="p-1">Romance</p></div>
-                <div class="div1"><i class="fas fa-dog"></i><p class="p-1">Animaux</p></div>
-                <div class="div-2"><i class="fas fa-info" id="icone-info"></i><p id="p-info">Plus de 500 logements sont disponibles dans cette villes</p></div>
-            </div>
-        </section>
-        </div>
-        <section class="hebergement">
+        <section id="hebergement">
             <div class="divh">
                 <h1 class="tit-heberg">Hébegrement à marseille</h1>
                 <div class="conth">
@@ -224,7 +243,7 @@
                 </div>
             </div>
         </section>
-        <section class="Activités">
+        <section id="Activités">
             <h1 class="tit-acti"> Activités à Marseille</h1>
             <div class="contA">
                     <article class="arti-1">
@@ -248,7 +267,7 @@
                         <div class="diva-img-3">
                             <img src="sous-images/ile-de-fioul.jpg" alt="" class="img-3">
                         </div>
-                        <h3>île de Friuol</h3>
+                        <h3>îles du Frioul</h3>
                     </a>
                 </article>
                 <article class="arti-4">

@@ -1,5 +1,5 @@
 @media screen and (max-width: 1200px){ 
-    .hebergement{ 
+    #hebergement{ 
        /* border: 2px solid red;*/
         display: grid;
         height: auto;
@@ -11,13 +11,13 @@
         justify-content: center;
         }
         .divh{ 
-         /*   border:2px solid green;*/
+          /*  border:2px solid green;*/
             border-radius: 20px;
             width: auto;
             justify-content: center;
         }
         .conth{ 
-         /*  border: 2px solid green;*/
+           /*border: 2px solid green;*/
             display: grid;
             padding: 0px;
             padding: 0px 20px;
@@ -39,7 +39,8 @@
             color:black;
             font-weight: 1000;
             margin-left: 10px;
-            margin-top: 0px;
+            position: relative;
+            bottom: 20px;
         }
         .divp{ 
            /* border:2px solid blue;*/
@@ -62,9 +63,15 @@
             border-radius: 20px;
             width: 30vw;
         }
-
+        .p-7,.p-8,.p-9{ 
+            margin-top: 10px;
+        }
+        .sp-7,.sp-8,.sp-9{ 
+            margin-bottom: 10px;
+            height: 50px;
+        }
 /*Le css de la partie Activités*/
-.Activités{ 
+#Activités{ 
   /*  border: 2px solid purple;*/
     height: auto;
     padding-left: 20px;

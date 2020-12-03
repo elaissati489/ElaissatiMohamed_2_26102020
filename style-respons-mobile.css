@@ -1,4 +1,4 @@
-@media screen and (max-width:530px){ 
+@media screen and (max-width:600px){ 
     html,head,body{ 
         margin: 0px;
     }
@@ -19,16 +19,15 @@
         display: grid;
         align-items: center;
         grid-template-areas: "logo nav inscrit";
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
-        "logo logo inscrit inscrit"
-        "nav nav nav nav";
-        padding: 10px;
+        "logo inscrit"
+        "nav nav";
     }
     .img-logo{ 
         grid-area: logo;
-       /* height: 100%;*/
+        margin-left: 25px;
     }
     .nav-1{ 
       /*  border:2px solid blue;*/
@@ -38,42 +37,41 @@
         /*height: 100%;*/
     }
    #sp-a{ 
-       /* border:2px solid green;*/
-        width: 50%;
+       /*border:2px solid green;*/
+       width: 50%;
        text-align: center;
+       font-size: 17px;
     }
     #sp-a:hover{ 
         /* border:2px solid green;*/
         border-top: 0px;
-         width: 50%;
         text-align: center;
         border-bottom: 2px solid #0065FC;
      }
     #sp-h{ 
-      /*  border:2px solid green;*/
+       /* border:2px solid green;*/
         width: 50%;
        text-align: center;
+       font-size: 17px;
     }
     #sp-h:hover{ 
         border-top: 0px;
-        width: 50%;
        text-align: center;
        border-bottom: 2px solid #0065FC;
     }
     #sp-i{ 
        /* border:2px solid green;*/
         grid-area: inscrit;
-        /*height: 100%;*/
        display: flex;
        justify-content: flex-end;
+       position: relative;
+       font-size: 17px;
     }
     #sp-i:hover{ 
         /* border:2px solid green;*/
         border-top: 0px;
          grid-area: inscrit;
          /*height: 100%;*/
-        display: flex;
-        justify-content: flex-end;
      }
 
 
@@ -93,84 +91,159 @@
         margin-top: -8px;
         text-align: center;
     } 
-    .icone{ 
-        display: inline;
-        float: left;
-        height: 43px;
-        width: 45px;
-        background-color:  #E3E5EE;
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
-        padding: 0px;
-    }
-    form{ 
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    input[type="text"]{ 
-        height: 20px;
-        padding: 10px;
-        margin-right: 0px;
-        width: auto;
-        border: 1px solid #E3E5EE;
-    
-     }
-     #lieux{ 
-         width: auto;
-         overflow: hidden;
-     }
-    .B-recherche{ 
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .button-1{ 
-        background-color: #0065FC;
-        margin-left: -5px;
-        height: 43px;
-        width: 43px;
-        border-radius: 13px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: bolder;
-        border: 0px;
-        display: none;
-    }
-    .button-2{ 
-        background-color: #0065FC;
-        height: 43px;
-        width: 43px;
-        border-radius: 13px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: bolder;
-        border: 0px;
-        display: inline;
-        float: right;
-        margin-left: 0px;
-    }
-    .fa-search{ 
-        color: white;
-    }
-    .Filtres{ 
-        height: auto;
-        padding-left: 10px;
-        margin-left: 20px;
-        margin-right: 20px;
-     }
-    span{ 
-        margin-top: 15px;
-    }
-    .div1{ 
-        /*border: 2px solid red;*/
-        display: inline-block;
-        height: 50px;
-        width: 150px;
-       /* margin-right: 10px;
-        margin-top: 19px;*/
-    }
 
+
+    /*La partie à changer*/
+    .B-recherche{ 
+        /* border: 2px solid red;*/
+         margin-left: 10px;
+         margin-right: 10px;
+         height: 50px;
+      }
+     form{ 
+         width: 100%;
+         display: flex;
+         justify-content: center;
+     }
+     input{ 
+         border-left: 0px;
+         border-top: 1px solid #d9d9d9;
+         border-bottom: 1px solid #d9d9d9;
+         width: 60%;
+         padding-left: 30px;
+         font-family: 'Raleway', sans-serif;
+         font-weight: bolder;
+         font-size: 20px;
+     }
+      .formul{ 
+        /* border: 2px solid blue;*/
+         display: flex;
+         height: 100%;
+     }
+ 
+     .bt-1{ 
+         width: 80px;
+         background-color: #0065FC;
+         color: white;
+         width:130px;
+         border: 0px;
+         border-top-right-radius: 15px;
+         border-bottom-right-radius: 15px;
+         font-family: 'Raleway', sans-serif;
+         font-weight: bolder;
+         font-size: 15px;
+         display: none;
+      }
+      .bt-2{ 
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: #0065FC;
+         color: white;
+         width: 50px;
+         border: 0px;
+         border-top-right-radius: 15px;
+         border-bottom-right-radius: 15px;
+     }
+ /*La fin du css de la partie formulaire*/
+ 
+     .filtres{ 
+        /* border: 2px solid green;*/
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 10px;
+          margin-left: 10px;
+          margin-right: 10px;
+          justify-content: flex-start;
+          padding: 0px 20px;
+      }
+      .h2-filtres{ 
+        /* border: 2px solid yellow;*/
+         font-size: 25px;
+         margin-top: 0px;
+         margin-right: 20px;
+         font-weight: bolder;
+         display: flex;
+         align-items: center;
+         font-family: 'Raleway', sans-serif;
+         position: relative;
+         top: 10px;
+      }
+      .div1-eco,.div1-fam,.div1-rom,.div1-animaux{
+        /* border: 2px solid red;*/
+         display: flex;
+         width: auto;
+         height: 90px;
+         align-items: center;
+      }
+      .icon{ 
+          width: 49px;
+          height: 49px;
+          border-radius: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #DEEBFF;
+      }
+      
+      .fa-money-bill-wave,.fa-child,.fa-heart,.fa-dog{ 
+          color: blue;
+      }
+      .span-filtres-E{ 
+        border: 1px solid #d9d9d9;
+        width: 150px;
+        height: 50px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-family: 'Raleway', sans-serif;
+        padding-right: 1rem;
+        position: relative;
+        right: 50px;
+      
+      }
+      .span-filtres-F{ 
+          border: 1px solid #d9d9d9;
+          width: 120px;
+          height: 50px;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          font-family: 'Raleway', sans-serif;
+          padding-right: 1rem;
+          position: relative;
+          right: 50px;
+        }
+      .span-filtres-R{ 
+          border: 1px solid #d9d9d9;
+          width: 140px;
+          height: 50px;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          font-family: 'Raleway', sans-serif;
+          padding-right: 1rem;
+          position: relative;
+          right: 50px;
+        }
+        .span-filtres-A{ 
+          border: 1px solid #d9d9d9;
+          width: 200px;
+          height: 50px;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          font-family: 'Raleway', sans-serif;
+          padding-right: 1rem;
+          position: relative;
+          right: 50px;
+        }
  /*Le css responsive de la partie hebergement à marseille*/
- .hebergement{ 
+ #hebergement{ 
    /* border: 2px solid red;*/
     display: grid;
     height: auto;
@@ -189,10 +262,7 @@
     grid-row-gap: 1.5rem;
     grid-column-gap: 0.5rem;
 }
-.divh{ 
-     /*border:2px solid green;*/
-    
- }
+
 .img-1-h{ 
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -215,15 +285,17 @@
     border-radius: 20px;
     grid-row-start: 1;
     width: auto;
-    margin: 0px 10px;
+    margin-left: 20px;
 }
-
+.arti-p{ 
+    overflow: auto;
+}
 
 /*La fin de la partie populaires*/
 /*la fin du css responsive de la partie hebergement à marseille*/
  
 /*Le css de lapartie actvivtés a marseille*/
-.Activités{ 
+#Activités{ 
    /* border: 2px solid purple;*/
     height: auto;
     width: 91%;
@@ -299,9 +371,9 @@ footer{
     flex-wrap: wrap;
     margin-right: 15px;
 }
-.d1,.d2,.d3{ 
 
-/* border: 2px solid red;*/
-width: 95%;
+footer ul li{
+position: relative;
+right: 44px;
 }
 }
