@@ -5,7 +5,7 @@
         height: auto;
         width: auto;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.8fr 1fr;
+        grid-template-rows: 0.7fr 1fr;
         grid-row-gap: 30px;
         }
     .divh{ 
@@ -51,7 +51,7 @@
     .arti-p{ 
    /* border: 1px solid red;*/
     border-radius: 20px;
-    height: 20vh;
+    /*height: 20vh;*/
     width: 100%;
     background-color: white;
 }
@@ -60,10 +60,9 @@
    /*  border: 2px solid purple; */
      border-top-left-radius: 20px;
      border-bottom-left-radius: 20px;
-     height: 95%;
+     height: 100%;
      width: 30%;
      float: left;
-     padding: 2px;
  }
  .img-2-h{ 
     height: 95%;
@@ -78,10 +77,13 @@
    height: 100%;
    border-top-right-radius: 20px;
    border-bottom-right-radius: 20px;
-   width: 65%;
+   width: 70%;
    background-color: white;
 }
-
+.space{ 
+    min-height: 20px;
+    display: none;
+}
 /*Le css de la partie activivtés a marseille*/
 
 #Activités{ 

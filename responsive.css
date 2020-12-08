@@ -70,12 +70,13 @@
             margin-bottom: 10px;
             height: 50px;
         }
+        .space{ 
+            display: none;
+        }
 /*Le css de la partie Activités*/
 #Activités{ 
   /*  border: 2px solid purple;*/
     height: auto;
-    padding-left: 20px;
-    padding-right: 20px;
     margin-bottom: 90px;
 }
 .contA{ 

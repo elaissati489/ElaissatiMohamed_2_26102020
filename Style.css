@@ -3,6 +3,7 @@ html,head,body{
 }
 body{ 
     border: 2px solid aqua;
+    min-width: 190px;
 }
 .main-test{ 
    /* border: 2px solid purple;*/
@@ -37,6 +38,7 @@ header{
     color:black;
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
+    border: 1px solid white;
 }
 #sp-h{ 
     padding:2rem;
@@ -44,6 +46,8 @@ header{
     color:black;
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
+    border: 1px solid white;
+
 }
 #sp-a:hover{ 
     padding:2rem;
@@ -66,6 +70,8 @@ header{
     color: #0065FC;
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
+    border: 1px solid white;
+
 }
 #sp-i:hover{ 
     grid-area: inscrit;
@@ -76,9 +82,7 @@ header{
     font-family: 'Raleway', sans-serif;
 
 }
-.trouver-son-voyage{ 
-   /* border: 1px solid red;*/
-}
+
 .p1{ 
   font-family: 'Raleway', sans-serif;
   font-weight: bolder;
@@ -112,6 +116,7 @@ header{
   }
   input{ 
       border-left: 0px;
+      border-right: 0px;
       border-top: 1px solid #d9d9d9;
       border-bottom: 1px solid #d9d9d9;
       width: 200px;
@@ -120,6 +125,11 @@ header{
       font-weight: bolder;
       font-size: 15px;
       color: black;
+  }
+  ::placeholder{ 
+      color: black;
+      font-weight: 900;
+      font-size: 17px;
   }
 
   .bt-1{ 
@@ -145,23 +155,43 @@ header{
       height: auto;
     }
   .h2-filtres{ 
-     /*border: 2px solid yellow;*/
+   /*  border: 2px solid yellow;*/
      font-size: 25px;
      margin-top: 0px;
      margin-right: 20px;
      font-weight: bolder;
      display: flex;
-     align-items: center;
      font-family: 'Raleway', sans-serif;
      position: relative;
      top: 10px;
   }
-  .div1-eco,.div1-fam,.div1-rom,.div1-animaux{
-    /* border: 2px solid red;*/
+  .div1-eco{
+    /*border: 2px solid red;*/
+    display: flex;
+    width:230px;
+    height: 90px;
+    align-items: center;
+  }
+.div1-fam{
+     /*border: 2px solid red;*/
      display: flex;
-     width: auto;
+     width:200px;
      height: 90px;
      align-items: center;
+  }
+  .div1-rom{
+    /*border: 2px solid red;*/
+    display: flex;
+    width:220px;
+    height: 90px;
+    align-items: center;
+ }
+  .div1-animaux{ 
+   /*border: 2px solid red;*/
+    display: flex;
+    width:280px;
+    height: 90px;
+    align-items: center;
   }
   .icon{ 
       /*border:2px solid green;*/
@@ -280,7 +310,7 @@ header{
   .sp-info{ 
      /*border: 1px solid blue; */
      display: inline-block;
-     margin-left: 5px;
+     margin-left: 10px;
      font-family: 'Raleway', sans-serif;
   }
 
@@ -303,7 +333,7 @@ h1{
 .divh{ 
    /* border:2px solid green;*/
     border-radius: 20px;
-    background-color: #E5E4E4;
+    background-color: #F2F2F2;
 }
 .conth{ 
     /*border: 2px solid green;*/
@@ -327,6 +357,7 @@ h1{
     background-color: white;
     box-shadow: 0px 0px 16px #0000002e;
 }
+
      .img-1-h{ 
         height: 150px;
         width: 100%;
@@ -420,11 +451,11 @@ margin-right: 10px;
 .divp{ 
    /* border:2px solid blue;*/
     border-radius: 20px;
-    background-color: #E5E4E4;
+    background-color:#F2F2F2;
 }
 
 .contp{ 
-    /*border: 2px solid green;*/
+   /* border: 2px solid green;*/
     height: auto;
     border-radius: 20px;
     padding: 0px 20px;
@@ -433,12 +464,14 @@ margin-right: 10px;
 }
 
 .arti-p{ 
-    /*border: 1px solid red;*/
+   /* border: 1px solid red;*/
     border-radius: 20px;
-    height: 20vh;
+    padding: 2px;
+    height: 140px;
     background-color: white;
     box-shadow: 0px 0px 16px #0000002e;
 }
+
 .div-image-7,.div-image-8,.div-image-9{ 
 
        border-top-left-radius: 20px;
@@ -456,6 +489,7 @@ margin-right: 10px;
     padding: 4px;
 }
    .texte-7,.texte-8,.texte-9{ 
+    /* border: 1px solid blue;  */
      float:right;
      height: 100%;
      border-top-right-radius: 20px;
@@ -465,22 +499,31 @@ margin-right: 10px;
   }
   .p-7,.p-8,.p-9{ 
     margin-left: 20px;
-  /*  border: 1px solid red; */
+    margin-top: 3px;
+   /* border: 1px solid red; */
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
-    margin-bottom: 5px;
+    margin-bottom: 9px;
 }
 .sp-7,.sp-8,.sp-9{ 
     margin-left: 20px;
- /*   border: 1px solid red; */
+    margin-bottom: 0px;
+    /*border: 1px solid red; */
     font-family: 'Raleway', sans-serif;
     margin-top: 0px;
-    margin-bottom: 30px;
+    height: 40px;
+    
+}
+.space{ 
+    /*border: 1px solid orange;*/
+    min-height: 20px;
 }
 .star-7,.star-8,.star-9{ 
      /* border: 1px solid red;*/
       margin-left: 20px;
       display: inline-block;
+      position: relative;
+      bottom: 0px;
   }
   .fa-star{ 
       /*border: 2px solid green;*/
@@ -513,6 +556,7 @@ margin-right: 10px;
     box-shadow: 0px 0px 16px #0000002e;
 
 }
+
 .arti-1{ 
     grid-row:1 / 6;
 }
