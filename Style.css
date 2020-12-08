@@ -2,7 +2,6 @@ html,head,body{
     margin: 0px;
 }
 body{ 
-    border: 2px solid aqua;
     min-width: 190px;
 }
 .main-test{ 
