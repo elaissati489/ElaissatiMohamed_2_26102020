@@ -1,4 +1,8 @@
 @media screen and (max-width: 1200px){ 
+
+
+    
+/*Le css de la partie hébergement à Marseille*/
     #hebergement{ 
        /* border: 2px solid red;*/
         display: grid;
@@ -42,13 +46,19 @@
             position: relative;
             bottom: 20px;
         }
+        /*fin du css des articles hebergements*/
+
+
+
+
+
+        /*Le css de la partie les plus populaires*/
         .divp{ 
            /* border:2px solid blue;*/
             border-radius: 20px;
             grid-row-start: 1;
             width:auto ;
         }
-        
         .contp{ 
            /* border: 2px solid green;*/
             height: auto;
@@ -73,6 +83,12 @@
         .space{ 
             display: none;
         }
+/*La fin du css des articles les plus populaires*/
+
+
+
+
+
 /*Le css de la partie Activités*/
 #Activités{ 
   /*  border: 2px solid purple;*/

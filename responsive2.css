@@ -1,4 +1,8 @@
 @media screen and (max-width: 900px){ 
+
+
+
+    /*Le css de la partie hébergement à Marseille*/
     #hebergement{ 
        /* border: 2px solid red;*/
         display: grid;
@@ -33,6 +37,10 @@
         object-fit: cover;
         margin: 0px;
      }
+/*fin du css des articles hebergements*/
+
+
+/*Le css de la partie les plus populaires*/
     .contp{ 
         /*border: 2px solid green;*/
         height:auto;
@@ -72,7 +80,6 @@
     object-fit: cover;
 }
  .texte-7,.texte-8,.texte-9{ 
-
    float:right;
    height: 100%;
    border-top-right-radius: 20px;
@@ -84,6 +91,11 @@
     min-height: 20px;
     display: none;
 }
+/*La fin du css des articles les plus populaires*/
+
+
+
+
 /*Le css de la partie activivtés a marseille*/
 
 #Activités{ 
@@ -155,8 +167,11 @@
      border-top-left-radius: 20px;
      border-top-right-radius: 20px;
 }
-
 /*La fin du css de la partie activivtés a marseille*/
+
+
+
+
 /*LE FOOTER*/
 
 footer{ 
@@ -166,7 +181,6 @@ footer{
     margin-right: 15px;
 }
 .d1,.d2,.d3{ 
-
 /* border: 2px solid red;*/
 width: auto;
 }

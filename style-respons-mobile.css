@@ -10,11 +10,14 @@
       /*  border: 3px solid yellow;*/
     }
     .main-test{ 
-        border: 1px solid purple;
+        /*border: 1px solid purple;*/
         padding: 0px;
         width: 100%;
     }
-    /*La partie navigation di site web*/
+
+
+
+/*Le css de la partie header*/
     .main{ 
        /* border: 2px solid aqua;*/
         width: 100%;
@@ -61,7 +64,6 @@
        text-align: center;
        font-size: 17px;
        border: 2px solid white;
-
     }
     #sp-h:hover{ 
         border-top: 0px;
@@ -75,15 +77,13 @@
        justify-content: flex-end;
        position: relative;
        font-size: 17px;
-        }
+   }
     #sp-i:hover{ 
         /* border:2px solid green;*/
         border-top: 0px;
          grid-area: inscrit;
          /*height: 100%;*/
      }
-
-
     .trouver-son-voyage{ 
        justify-content: center;
        padding-right: 10px;
@@ -96,7 +96,6 @@
         margin-left: 10px;
         margin-right: 10px;
     }
-    
     .p2{ 
         font-family: 'Raleway', sans-serif;
         margin-top: -8px;
@@ -105,9 +104,6 @@
         margin-left: 10px;
         margin-right: 10px;
     } 
-
-
-    /*La partie à changer*/
     .B-recherche{ 
         /* border: 2px solid red;*/
          margin-left: 10px;
@@ -138,7 +134,6 @@
          display: flex;
          height: 100%;
      }
- 
      .bt-1{ 
          width: 80px;
          background-color: #0065FC;
@@ -164,7 +159,6 @@
          position: relative;
          right: 20px;
      }
- /*La fin du css de la partie formulaire*/
  
      .filtres{ 
         /* border: 2px solid green;*/
@@ -205,7 +199,6 @@
           align-items: center;
           background-color: #DEEBFF;
       }
-      
       .fa-money-bill-wave,.fa-child,.fa-heart,.fa-dog{ 
           color: blue;
       }
@@ -221,7 +214,6 @@
         padding-right: 1rem;
         position: relative;
         right: 50px;
-      
       }
       .span-filtres-F{ 
           border: 1px solid #d9d9d9;
@@ -265,7 +257,6 @@
         .div-2{ 
             padding: 0px 20px;
         }
-
         .sp-info{ 
             /*border: 1px solid blue; */
             display: inline-block;
@@ -273,7 +264,11 @@
             font-family: 'Raleway', sans-serif;
             font-size: 15px;
          }
- /*Le css responsive de la partie hebergement à marseille*/
+
+
+
+
+ /*Le css de la partie hebergement à marseille*/
  #hebergement{ 
    /* border: 2px solid red;*/
     display: grid;
@@ -283,7 +278,6 @@
     grid-template-rows: 0.8fr 2fr;
     grid-row-gap: 30px;
     }
-
     .divh{ 
         /* border:2px solid green;*/
          border-radius: 20px;
@@ -300,7 +294,6 @@
     grid-row-gap: 1.5rem;
     grid-column-gap: 0.5rem;
 }
-
 .img-1-h{ 
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -308,7 +301,11 @@
     margin: 0px;
  }
 
-/*Le css de la sous populaires*/
+
+
+
+
+/*Le css de la partie les plus populaires*/
 .tit-pop{ 
     margin-left: 10px;
     min-width: 50px;
@@ -358,7 +355,10 @@ margin-right: 10px;
 /*La fin de la partie populaires*/
 /*la fin du css responsive de la partie hebergement à marseille*/
  
-/*Le css de lapartie actvivtés a marseille*/
+
+
+
+/*Le css de la partie actvivtés a marseille*/
 #Activités{ 
    /* border: 2px solid purple;*/
     height: auto;
@@ -428,6 +428,10 @@ margin-right: 10px;
      border-top-right-radius: 20px;
 }
 /*La fin du  css de lapartie actvivtés a marseille*/
+
+
+
+
 /* Le footer */
 footer{ 
     display: flex;
@@ -435,7 +439,6 @@ footer{
     flex-wrap: wrap;
     margin-right: 15px;
 }
-
 footer ul li{
 position: relative;
 right: 44px;
