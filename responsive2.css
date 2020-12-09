@@ -101,8 +101,15 @@
 #Activités{ 
    /* border: 2px solid purple;*/
     height: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+   /* padding-left: 20px;
+    padding-right: 20px;*/
+}
+.tit-acti{
+    /*border: 1px solid orange;*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    position: relative;
+    top: 0px;
 }
 .contA{ 
     display: grid;
