@@ -3,7 +3,7 @@ html,head,body{
 }
 body{ 
     min-width: 190px;
-    /*border: 2px solid aqua;*/
+   /* border: 2px solid aqua;*/
 }
 .main-test{ 
    /* border: 2px solid purple;*/
@@ -89,6 +89,7 @@ header{
 .p2{ 
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
+  margin-top: -20px;
 }
 .formul{ 
      /* border: 2px solid blue;*/
@@ -113,7 +114,7 @@ header{
       border-top: 1px solid #d9d9d9;
       border-bottom: 1px solid #d9d9d9;
       width: 200px;
-      padding-left: 30px;
+      padding-left: 15px;
       font-family: 'Raleway', sans-serif;
       font-weight: bolder;
       font-size: 15px;
@@ -140,138 +141,62 @@ header{
       display: none;
   }
   .filtres{ 
-     /* border: 2px solid green;*/
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      height: auto;
-    }
-  .h2-filtres{ 
-   /*  border: 2px solid yellow;*/
-     font-size: 25px;
-     margin-top: 0px;
-     margin-right: 20px;
-     font-weight: bolder;
+    /* border: 2px solid green;*/
      display: flex;
-     font-family: 'Raleway', sans-serif;
-     position: relative;
-     top: 10px;
-  }
-  .div1-eco{
-    /*border: 2px solid red;*/
-    display: flex;
-    width:230px;
-    height: 90px;
-    align-items: center;
-  }
- .div1-fam{
-     /*border: 2px solid red;*/
-     display: flex;
-     width:200px;
-     height: 90px;
+     flex-wrap: wrap;
      align-items: center;
-  }
-  .div1-rom{
-    /*border: 2px solid red;*/
+     height: auto;
+     padding-top: 20px;
+   }
+ .h2-filtres{ 
+   /* border: 2px solid yellow;*/
+    font-size: 25px;
+    margin-top: 0px;
+    margin-right: 20px;
+    font-weight: bolder;
     display: flex;
-    width:230px;
-    height: 90px;
-    align-items: center;
+    font-family: 'Raleway', sans-serif;
  }
-  .div1-animaux{ 
-   /*border: 2px solid red;*/
+ .wrapp{ 
+     /*border: 1px solid red;*/
+ }
+ .wrapp:hover{ 
+     transition-duration: 0.4s;
+     color: blue;
+     transform: scale(1.05,1.05);
+ }
+ .div1-eco,.div1-fam,.div1-rom,.div1-animaux{
+   border: 1px solid #d9d9d9;
+    border-radius: 30px;
     display: flex;
-    width:280px;
-    height: 90px;
     align-items: center;
-  }
-  .icon{ 
-      /*border:2px solid green;*/
-      width: 49px;
-      height: 49px;
-      border-radius: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: blue;
-      background-color: #DEEBFF;
-  }
-  .span-filtres-E{ 
-      border: 1px solid #d9d9d9;
-      width: 150px;
-      height: 50px;
-      border-radius: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      font-family: 'Raleway', sans-serif;
-      font-weight: bolder;
-      padding-right: 1rem;
-      position: relative;
-      right: 50px;
-    }
-    .span-filtres-E:hover{ 
-        width: 160px;
-        color: blue;
-       transition-duration: 0.4s;
-    }
-  .span-filtres-F{ 
-      border: 1px solid #d9d9d9;
-      width: 120px;
-      height: 50px;
-      border-radius: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      font-family: 'Raleway', sans-serif;
-      font-weight: bolder;
-      padding-right: 1rem;
-      position: relative;
-      right: 50px;
-    }
-    .span-filtres-F:hover{ 
-        width: 130px;
-        color: blue;
-       transition-duration: 0.4s;
-    }
-  .span-filtres-R{ 
-      border: 1px solid #d9d9d9;
-      width: 150px;
-      height: 50px;
-      border-radius: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      font-family: 'Raleway', sans-serif;
-      font-weight: bolder;
-      padding-right: 1rem;
-      position: relative;
-      right: 50px;
-    }
-    .span-filtres-R:hover{ 
-        width: 160px;
-        color: blue;
-       transition-duration: 0.5s;
-    }
-    .span-filtres-A{ 
-      border: 1px solid #d9d9d9;
-      width: 200px;
-      height: 50px;
-      border-radius: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      font-family: 'Raleway', sans-serif;
-      font-weight: bolder;
-      padding-right: 1rem;
-      position: relative;
-      right: 50px;
-    }
-    .span-filtres-A:hover{ 
-        width: 210px;
-        color: blue;
-       transition-duration: 0.4s;
-    }
+    margin-right: 2rem;
+    margin-bottom: 15px;
+ }
+ .div1-eco:hover{ 
+
+ }
+ .icon{ 
+    /* border:1px solid green;*/
+     border-radius: 100%;
+     width: 3rem;
+     height: 3rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: blue;
+     background-color:  #DEEBFF;
+ }
+
+ .span-filtres-E,.span-filtres-F,.span-filtres-R,.span-filtres-A{
+     margin: 0px 15px;
+     font-family: 'Raleway', sans-serif;
+     font-weight: bolder;
+ }
+.div1-eco:hover{ 
+    color: blue;
+    transition-duration: 0.4s;
+}
   .div-2{ 
      /*border: 2px solid red;*/
      height: auto;
@@ -313,8 +238,6 @@ header{
 #hebergement{ 
 /*border: 2px solid red;*/
 display: grid;
-/*height: 86vh;*/
-width: 100vw;
 width: auto;
 grid-template-columns: 2fr 1fr;
 grid-template-rows: 1fr;
@@ -325,20 +248,20 @@ h1{
     font-family: 'Raleway', sans-serif;
 }
 .divh{ 
-   /* border:2px solid green;*/
+    /*border:2px solid green;*/
     border-radius: 20px;
     background-color: #F2F2F2;
 }
 .conth{ 
-    /*border: 2px solid green;*/
+  /*  border: 2px solid green;*/
     height: auto;
     border-radius: 20px;
     padding: 0px 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: 1rem;
-    grid-column-gap: 1rem;
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 1.5rem;
     margin-bottom: 40px;
 }
 /*le css des articles hebergements*/
@@ -348,8 +271,13 @@ h1{
 .arti-h{ 
     /*border: 1px solid red;*/
     border-radius: 20px;
-    background-color: white;
+    background-color:  white;
     box-shadow: 0px 0px 16px #0000002e;
+    padding-bottom: 10px;
+}
+.arti-h:hover{ 
+    transition-duration: 0.1s;
+    transform: scale(1.03,1.03);
 }
  .img-1-h{ 
         height: 150px;
@@ -421,6 +349,8 @@ h1{
           color:  #c6cfd0;
       }
 .lien-plus{ 
+    position: relative;
+    bottom: 20px;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     color:black;
@@ -461,6 +391,9 @@ margin-right: 20px;
     height: 140px;
     background-color: white;
     box-shadow: 0px 0px 16px #0000002e;
+}
+.arti-p:hover{ 
+    transform: scale(1.03,1.03);
 }
 .div-image-7,.div-image-8,.div-image-9{ 
 
@@ -526,7 +459,7 @@ margin-right: 20px;
 
 /* Le css de la partie Activités a marseille*/
 #Activités{ 
-    /*order: 2px solid purple;*/
+    /*Border: 2px solid purple;*/
     height: 80vh;
 }
 .tit-acti{
@@ -553,22 +486,42 @@ margin-right: 20px;
     grid-row:1 / 6;
     margin-left: 0px;
 }
+.arti-1:hover{ 
+    transition-duration: 0.1s;
+    transform: scale(1.03,1.03);
+}
 .arti-2{ 
     grid-row:1 / 4;
+}
+.arti-2:hover{ 
+    transition-duration: 0.1s;
+    transform: scale(1.03,1.03);
 }
 .arti-3{ 
     grid-column-start: 2;
     grid-row: 4 / 6;
+}
+.arti-3:hover{ 
+    transition-duration: 0.1s;
+    transform: scale(1.03,1.03);
 }
 .arti-4{ 
     grid-row:1 / 6;
     grid-column-start: 3;
 
 }
+.arti-4:hover{ 
+    transition-duration: 0.1s;
+    transform: scale(1.03,1.03);
+}
 .arti-5{ 
     grid-row:1 / 3;
     margin-right: 0px;
     
+}
+.arti-5:hover{ 
+    transition-duration: 0.1s;
+    transform: scale(1.03,1.03);
 }
 .arti-6{ 
     grid-row:4 / 6;
@@ -576,6 +529,10 @@ margin-right: 20px;
  grid-row-start: 3;
  margin-right: 0px;
 
+}
+.arti-6:hover{ 
+    transition-duration: 0.1s;
+    transform: scale(1.03,1.03);
 }
 .diva-img-1,.diva-img-4{ 
   /*  border: 1px solid blue;*/

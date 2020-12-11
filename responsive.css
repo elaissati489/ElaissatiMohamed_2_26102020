@@ -17,7 +17,7 @@
         .divh{ 
           /*  border:2px solid green;*/
             border-radius: 20px;
-            width: auto;
+            width: 100%;
             justify-content: center;
         }
         .conth{ 
@@ -57,7 +57,7 @@
            /* border:2px solid blue;*/
             border-radius: 20px;
             grid-row-start: 1;
-            width:auto ;
+            width:auto;
         }
         .contp{ 
            /* border: 2px solid green;*/
@@ -71,7 +71,7 @@
         .arti-p{ 
             /*border: 1px solid red;*/
             border-radius: 20px;
-            width: 30vw;
+            width: 28vw;
         }
         .p-7,.p-8,.p-9{ 
             margin-top: 10px;
@@ -101,8 +101,8 @@
    /* border: 2px solid orange;*/
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    row-gap: 20px;
-    column-gap: 20px;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
 } 
 .arti-1{ 
     grid-row:auto;

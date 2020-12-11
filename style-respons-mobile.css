@@ -110,7 +110,7 @@
         margin-top: -8px;
         text-align: center;
         font-size: 18px;
-        margin-left: 10px;
+        margin-left: 19px;
         margin-right: 10px;
     } 
     .B-recherche{ 
@@ -118,6 +118,33 @@
          margin-left: 10px;
          margin-right: 10px;
          height: 50px;
+      }
+      .filtres{ 
+        /* border: 2px solid green;*/
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 10px;
+          margin-left: 10px;
+          margin-right: 10px;
+          justify-content: flex-start;
+          padding: 0px 20px;
+      }
+      .h2-filtres{ 
+        /* border: 2px solid yellow;*/
+         font-size: 25px;
+         margin-top: 0px;
+         margin-right: 20px;
+         font-weight: bolder;
+         display: block;
+         width: 100%;
+         align-items: center;
+         font-family: 'Raleway', sans-serif;
+         position: relative;
+         top: 10px;
+      }
+      .div1-eco,.div1-fam,.div1-rom,.div1-animaux{
+        /* border: 2px solid red;*/
+        margin-right: 1rem;
       }
      form{ 
          width: 100%;
@@ -170,7 +197,7 @@
      }
  
      .filtres{ 
-        /*border: 2px solid green;*/
+        /* border: 2px solid green;*/
           display: flex;
           flex-wrap: wrap;
           margin-top: 10px;
@@ -181,7 +208,7 @@
       }
       .h2-filtres{ 
         /* border: 2px solid yellow;*/
-         font-size: 20px;
+         font-size: 25px;
          margin-top: 0px;
          margin-right: 20px;
          font-weight: bolder;
@@ -190,79 +217,12 @@
          align-items: center;
          font-family: 'Raleway', sans-serif;
          position: relative;
-         top: 20px;
+         top: 10px;
       }
       .div1-eco,.div1-fam,.div1-rom,.div1-animaux{
         /* border: 2px solid red;*/
-         display: flex;
-         width: auto;
-         height: 90px;
-         align-items: center;
+        margin-right: 1rem;
       }
-      .icon{ 
-          width: 49px;
-          height: 49px;
-          border-radius: 100px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: #DEEBFF;
-      }
-      .fa-money-bill-wave,.fa-child,.fa-heart,.fa-dog{ 
-          color: blue;
-      }
-      .span-filtres-E{ 
-        border: 1px solid #d9d9d9;
-        width: 150px;
-        height: 50px;
-        border-radius: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        font-family: 'Raleway', sans-serif;
-        padding-right: 1rem;
-        position: relative;
-        right: 50px;
-      }
-      .span-filtres-F{ 
-          border: 1px solid #d9d9d9;
-          width: 120px;
-          height: 50px;
-          border-radius: 50px;
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
-          font-family: 'Raleway', sans-serif;
-          padding-right: 1rem;
-          position: relative;
-          right: 50px;
-        }
-      .span-filtres-R{ 
-          border: 1px solid #d9d9d9;
-          width: 140px;
-          height: 50px;
-          border-radius: 50px;
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
-          font-family: 'Raleway', sans-serif;
-          padding-right: 1rem;
-          position: relative;
-          right: 50px;
-        }
-        .span-filtres-A{ 
-          border: 1px solid #d9d9d9;
-          width: 200px;
-          height: 50px;
-          border-radius: 50px;
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
-          font-family: 'Raleway', sans-serif;
-          padding-right: 1rem;
-          position: relative;
-          right: 50px;
-        }
         .div-2{ 
             padding: 0px 20px;
         }
