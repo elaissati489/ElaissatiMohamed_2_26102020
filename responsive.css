@@ -4,7 +4,6 @@
     
 /*Le css de la partie hébergement à Marseille*/
     #hebergement{ 
-       /* border: 2px solid red;*/
         display: grid;
         height: auto;
         width: auto;
@@ -15,20 +14,17 @@
         justify-content: center;
         }
         .divh{ 
-          /*  border:2px solid green;*/
             border-radius: 20px;
             width: 100%;
             justify-content: center;
         }
         .conth{ 
-           /*border: 2px solid green;*/
             display: grid;
             padding: 0px;
             padding: 0px 20px;
             margin-bottom: 40px;
         }
         .arti-h{ 
-           /* border: 1px solid red;*/
             border-radius: 20px;
         }
         .img-1-h{ 
@@ -38,7 +34,6 @@
             margin: 0px;
          }
          .lien-plus{ 
-            /* border: 1px solid red;*/
             font-family: 'Raleway', sans-serif;
             color:black;
             font-weight: 900;
@@ -54,13 +49,11 @@
 
         /*Le css de la partie les plus populaires*/
         .divp{ 
-           /* border:2px solid blue;*/
             border-radius: 20px;
             grid-row-start: 1;
             width:auto;
         }
         .contp{ 
-           /* border: 2px solid green;*/
             height: auto;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -69,7 +62,6 @@
             margin: 0px;
         }    
         .arti-p{ 
-            /*border: 1px solid red;*/
             border-radius: 20px;
             width: 28vw;
         }
@@ -91,14 +83,12 @@
 
 /*Le css de la partie Activités*/
 #Activites{ 
-  /*  border: 2px solid purple;*/
     height: auto;
     margin-bottom: 90px;
 }
 .contA{ 
     display: grid;
     height: 90%;
-   /* border: 2px solid orange;*/
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     row-gap: 1.5rem;
@@ -127,26 +117,21 @@
  grid-row-start: auto;
 }
 .arti-1,.arti-2,.arti-3,.arti-4,.arti-5,.arti-6{ 
-    /* border: 1px solid red;*/
      border-radius: 20px;
      margin: 0px;
      border: 0.5px solid gray;
-   /*  box-shadow: 5px 5px 5px 5px #F3F3F3;*/
  }
 .diva-img-1,.diva-img-4{ 
-     /* border: 1px solid blue;*/
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
       height: 130px;
   }
   .diva-img-2,.diva-img-6{ 
-  /*border: 1px solid green;*/
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   height: 130px;
   }
   .diva-img-3,.diva-img-5{ 
- /* border: 1px solid orange;*/
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   height: 130px;
