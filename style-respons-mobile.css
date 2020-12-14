@@ -229,7 +229,7 @@
         .sp-info{ 
             /*border: 1px solid blue; */
             display: inline-block;
-            margin-left: 10x;
+            margin-left: 10px;
             font-family: 'Raleway', sans-serif;
             font-size: 15px;
          }
@@ -329,7 +329,7 @@ margin-right: 15px;
 
 
 /*Le css de la partie actvivtés a marseille*/
-#Activités{ 
+#Activites{ 
    /* border: 2px solid purple;*/
     height: auto;
     padding: 20px;

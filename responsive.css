@@ -41,7 +41,7 @@
             /* border: 1px solid red;*/
             font-family: 'Raleway', sans-serif;
             color:black;
-            font-weight: 1000;
+            font-weight: 900;
             margin-left: 10px;
             position: relative;
             bottom: 20px;
@@ -90,7 +90,7 @@
 
 
 /*Le css de la partie Activités*/
-#Activités{ 
+#Activites{ 
   /*  border: 2px solid purple;*/
     height: auto;
     margin-bottom: 90px;

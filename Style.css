@@ -1,9 +1,7 @@
-html,head,body{ 
+body{
     margin: 0px;
-}
-body{ 
     min-width: 190px;
-   /* border: 2px solid aqua;*/
+    /* border: 2px solid aqua;*/
 }
 .main-test{ 
    /* border: 2px solid purple;*/
@@ -157,9 +155,6 @@ header{
     display: flex;
     font-family: 'Raleway', sans-serif;
  }
- .wrapp{ 
-     /*border: 1px solid red;*/
- }
  .wrapp:hover{ 
      transition-duration: 0.4s;
      color: blue;
@@ -173,9 +168,7 @@ header{
     margin-right: 2rem;
     margin-bottom: 15px;
  }
- .div1-eco:hover{ 
 
- }
  .icon{ 
     /* border:1px solid green;*/
      border-radius: 100%;
@@ -354,7 +347,7 @@ h1{
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     color:black;
-    font-weight: 1000;
+    font-weight: 900;
     margin-left: 20px;
 }
 /*fin du css des articles hebergements*/
@@ -458,7 +451,7 @@ margin-right: 20px;
 
 
 /* Le css de la partie Activités a marseille*/
-#Activités{ 
+#Activites{ 
     /*Border: 2px solid purple;*/
     height: 80vh;
 }
@@ -598,7 +591,7 @@ h3{
     font-weight: lighter;
  }
  footer ul{ 
-     padding-inline-start: 0px;
+     padding-left: 0px;
  }
  li:hover{ 
      text-decoration: underline;
